@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator-body{
+            background-color: #456480;
+            height: 600px;
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 80px;
+            border-radius: 8px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            padding: 8px;
+
+        }
+    .logo {
+        font-family: 'Eurostile Extended', Impact;
+        text-transform: uppercase;
+        display: block;
+        font-size: 160%;
+        margin-top: 25px;
+        margin-left: 20px;
+        color: #e5e4ec;
+        
+
+        }
+        .small-screen-box{
+            display:flex;
+            float: right;
+            margin-top: -28px;
+            margin-right: 20px;
+        }
+        .small-screen{
+            height: 20px;
+            width: 26px;
+            background-color: #857d70;
+            border: 1px solid ;
+        }
+        .main-screen{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px ;
+            font-size: 25px;
+            height: 50px;
+            width: 310px;
+            background-color: #dae4e7;
+            padding: 3px;
+
+        }
+        .calculator-button{
+            display: flex;
+            margin-top: 25px;
+            justify-content: space-evenly;
+        }
+
+        .cal-button1{
+            font-size: 15px;
+            border-radius: 25px 25px 30px 30px;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+            box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+            float: left;
+            margin-left: 10px;
+            margin-top: 35px;
+
+        }
+        
+        .cal-button2{
+            font-size: 15px;
+            border-radius: 25px 25px 30px 30px;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+            box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+            float: right;
+            margin-right: 12px;
+            margin-top: 35px;
+            
+        }
+        .Replay-btn{
+            width: 68px;
+            height: 60px;
+            border-radius: 125px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+            vertical-align: middle;
+            box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+            position: fixed;
+            left: 47.6%;
+            margin-top: 15px;
+        }
+        .menu-btn{
+            font-size: 15px;
+            border-radius: 5px;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+            box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+            background-color: #274958;
+            color: #dae4e7; 
+        }
+        .calci-btn1{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 88px;
+            
+        }
+        .calci-btn2{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 12px;
+        }
+        .calci-btn3{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 12px;
+        }
+        .calculation-btn{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 25px;
+            
+
+        }
+        .element{
+            box-shadow: 2px 2px 5px 0 hsla(0, 0%, 0%, .75);
+            border-radius: 3px 3px 7px 7px;
+            text-align: center;
+            padding-left: 13px;
+            padding-right: 13px;
+            font-size: 20px;
+        }
+        .ex {
+            padding: 1%;
+            font-size: 15px;
+            background-color: #ea7274;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="calculator-body">
+        <span class="logo">Casio</span>
+
+        <div class="small-screen-box">
+            <div class="small-screen"></div>
+            <div class="small-screen"></div>
+            <div class="small-screen"></div>
+            <div class="small-screen"></div>
+        </div>
+
+        <input type="text" class="main-screen"/>
+
+        
+            <button class="cal-button1">Shift</button>
+            <button class="cal-button1">Alpha</button>
+        
+
+            <button class="Replay-btn">REPLAY</button>
+
+        
+            <button class="cal-button2">Mode</button>
+            <button class="cal-button2">On/Off</button>
+
+        <div class="calci-btn1">
+            <button class="menu-btn">log</button>
+            <button class="menu-btn">hyp</button>
+            <button class="menu-btn">sin</button>
+            <button class="menu-btn">cos</button>
+            <button class="menu-btn">tan</button>
+            <button class="menu-btn">nCr</button>  
+        </div>
+        <div class="calci-btn2">
+            <button class="menu-btn">(-)</button>
+            <button class="menu-btn">x^2</button>
+            <button class="menu-btn">Ins</button>
+            <button class="menu-btn">Pol</button>
+            <button class="menu-btn">a/b</button>
+            <button class="menu-btn">nPr</button>  
+        </div>
+        <div class="calci-btn3">
+            <button class="menu-btn">rcl</button>
+            <button class="menu-btn">hyp</button>
+            <button class="menu-btn">eng</button>
+            <button class="menu-btn">M+</button>
+            <button class="menu-btn">M-</button>   
+            <button class="menu-btn">rec</button>  
+        </div>
+        <div class="calculation-btn btn1">
+            <button class="element">7</button>
+            <button class="element">8</button>
+            <button class="element">9</button>
+            <button class="element ex">DEL</button>
+            <button class="element ex">AC</button>   
+        
+        </div>
+        <div class="calculation-btn btn2">
+            <button class="element">4</button>
+            <button class="element">5</button>
+            <button class="element">6</button>
+            <button class="element">x</button>
+            <button class="element">/</button>   
+        
+        </div>
+        <div class="calculation-btn btn3">
+            <button class="element">1</button>
+            <button class="element">2</button>
+            <button class="element">3</button>
+            <button class="element">+</button>
+            <button class="element">-</button>   
+        
+        </div>
+        <div class="calculation-btn btn4">
+            <button class="element">0</button>
+            <button class="element">.</button>
+            <button class="element ">%</button>
+            <button class="element ex">EXP</button>
+            <button class="element ">=</button>   
+        
+        </div>
+    </div>
+</body>
+</html>
